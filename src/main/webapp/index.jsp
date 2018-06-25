@@ -23,9 +23,6 @@
 
 <!-- Custom styles for this template -->
 <link href="/AdminModule/css/index.css" rel="stylesheet">
-
-
-
 </head>
 
 <body class="text-center">
@@ -47,6 +44,7 @@
 		</div>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
 			in</button>
+			<a href="Register.jsp">Register Here.</a>
 		<p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
 	</form>
 </body>
