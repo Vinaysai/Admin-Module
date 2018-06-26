@@ -33,7 +33,6 @@
 
 <body class="bg-light">
 
-
 	<div class="container">
 		<h1 class="jumbotron-fluid">Registration Form</h1>
 
@@ -44,22 +43,20 @@
 		</div>
 
 	</div>
-	</form>
-	</div>
 	<div class="col-md-8 order-md-1">
-		<h4 class="mb-3">Billing address</h4>
+		<h4 class="mb-3">Fill your details</h4>
 		<form class="needs-validation" novalidate>
-			
-			
+
+
 			<div class="row">
 				<div class="col-md-6 mb-3">
-				
-				
+
+
 					<label for="firstName">Student ID</label> <input type="text"
-						class="form-control" id="firstName" placeholder="RollNumber" value=""
-						required>
-				
-					</div>
+						class="form-control" id="firstName" placeholder="RollNumber"
+						value="" required>
+
+				</div>
 				<div class="col-md-6 mb-3">
 					<label for="lastName">Full name</label> <input type="text"
 						class="form-control" id="lastName" placeholder="" value=""
@@ -94,13 +91,33 @@
 			</div>
 
 			<div class="mb-3">
-				<label for="email">Email <span class="text-muted">(Optional)</span></label>
-				<input type="email" class="form-control" id="email"
-					placeholder="you@example.com">
-				<div class="invalid-feedback">Please enter a valid email
-					address for shipping updates.</div>
+				<label for="email">Year of passed out<span
+					class="text-muted"></span></label> <input type="email" class="form-control"
+					id="email" placeholder="yop">
+				<div class="invalid-feedback">Please enter yop.</div>
 			</div>
-
+			<div class="mb-3">
+				<label for="email">Percentage<span class="text-muted"></span></label>
+				<input type="email" class="form-control" id="email"
+					placeholder="%percentage%">
+				<div class="invalid-feedback">Please enter your percentage.</div>
+			</div>
+			<div class="mb-3">
+				<label for="date">Date of Birth</label>
+				<div class="col-10">
+					<input class="form-control" type="date" value="2018-6-26"
+						id="example-date-input">
+					<div class="invalid-feedback">Please enter yop.</div>
+				</div>
+			</div>
+			<div class="mb-3">
+				<label for="date">Date of Join</label>
+				<div class="col-10">
+					<input class="form-control" type="date" value="2018-6-26"
+						id="example-date-input">
+					<div class="invalid-feedback">Please enter yop.</div>
+				</div>
+			</div>
 			<div class="mb-3">
 				<label for="address">Address</label> <input type="text"
 					class="form-control" id="address" placeholder="1234 Main St"
@@ -114,13 +131,19 @@
 				<input type="text" class="form-control" id="address2"
 					placeholder="Apartment or suite">
 			</div>
+			<div class="mb-3">
+				<label for="address2">PanCard <span class="text-muted">*</span></label>
+				<input type="text" class="form-control" id="address2" required
+					placeholder="#pan number#">
+			</div>
 
 			<div class="row">
 				<div class="col-md-5 mb-3">
 					<label for="country">Country</label> <select
 						class="custom-select d-block w-100" id="country" required>
 						<option value="">Choose...</option>
-						<option>United States</option>
+						<option>India</option>
+						<option>USA</option>
 					</select>
 					<div class="invalid-feedback">Please select a valid country.</div>
 				</div>
@@ -128,23 +151,18 @@
 					<label for="state">State</label> <select
 						class="custom-select d-block w-100" id="state" required>
 						<option value="">Choose...</option>
+						<option>Hyderabad</option>
 						<option>California</option>
 					</select>
 					<div class="invalid-feedback">Please provide a valid state.</div>
 				</div>
 				<div class="col-md-3 mb-3">
 					<label for="zip">Zip</label> <input type="text"
-						class="form-control" id="zip" placeholder="" required>
+						class="form-control" id="zip" placeholder="pin code" required>
 					<div class="invalid-feedback">Zip code required.</div>
 				</div>
 			</div>
 			<hr class="mb-4">
-			<div class="custom-control custom-checkbox">
-				<input type="checkbox" class="custom-control-input"
-					id="same-address"> <label class="custom-control-label"
-					for="same-address">Shipping address is the same as my
-					billing address</label>
-			</div>
 			<div class="custom-control custom-checkbox">
 				<input type="checkbox" class="custom-control-input" id="save-info">
 				<label class="custom-control-label" for="save-info">Save
@@ -152,60 +170,29 @@
 			</div>
 			<hr class="mb-4">
 
-			<h4 class="mb-3">Payment</h4>
-
-			<div class="d-block my-3">
-				<div class="custom-control custom-radio">
-					<input id="credit" name="paymentMethod" type="radio"
-						class="custom-control-input" checked required> <label
-						class="custom-control-label" for="credit">Credit card</label>
-				</div>
-				<div class="custom-control custom-radio">
-					<input id="debit" name="paymentMethod" type="radio"
-						class="custom-control-input" required> <label
-						class="custom-control-label" for="debit">Debit card</label>
-				</div>
-				<div class="custom-control custom-radio">
-					<input id="paypal" name="paymentMethod" type="radio"
-						class="custom-control-input" required> <label
-						class="custom-control-label" for="paypal">PayPal</label>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-md-6 mb-3">
-					<label for="cc-name">Name on card</label> <input type="text"
+					<label for="cc-name">Unique ID</label> <input type="text"
 						class="form-control" id="cc-name" placeholder="" required>
-					<small class="text-muted">Full name as displayed on card</small>
-					<div class="invalid-feedback">Name on card is required</div>
+					<small class="text-muted">Unique id.</small>
+					<div class="invalid-feedback">Unique number is required</div>
 				</div>
 				<div class="col-md-6 mb-3">
-					<label for="cc-number">Credit card number</label> <input
-						type="text" class="form-control" id="cc-number" placeholder=""
-						required>
-					<div class="invalid-feedback">Credit card number is required</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 mb-3">
-					<label for="cc-expiration">Expiration</label> <input type="text"
-						class="form-control" id="cc-expiration" placeholder="" required>
-					<div class="invalid-feedback">Expiration date required</div>
-				</div>
-				<div class="col-md-3 mb-3">
-					<label for="cc-cvv">CVV</label> <input type="text"
-						class="form-control" id="cc-cvv" placeholder="" required>
-					<div class="invalid-feedback">Security code required</div>
+					<label for="address2">Phone Number <span class="text-muted">(*)</span></label>
+					<input type="text" class="form-control" id="cc-number"
+						placeholder="#ph no." required>
+					<div class="invalid-feedback">Phone Number.</div>
 				</div>
 			</div>
 			<hr class="mb-4">
 			<button class="btn btn-primary btn-lg btn-block" type="submit">Continue
-				to checkout</button>
+				to Register.</button>
 		</form>
 	</div>
 	</div>
 
 	<footer class="my-5 pt-5 text-muted text-center text-small">
-	<p class="mb-1">&copy; 2017-2018 Company Name</p>
+	<p class="mb-1">&copy; 2017-2018</p>
 	<ul class="list-inline">
 		<li class="list-inline-item"><a href="#">Privacy</a></li>
 		<li class="list-inline-item"><a href="#">Terms</a></li>
@@ -269,5 +256,6 @@
 													}, false);
 								})();
 	</script>
+
 </body>
 </html>
